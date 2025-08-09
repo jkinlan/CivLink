@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# Update host
+sudo apt update
+sudo apt upgrade -y
+
+# Install Nginx
+audo apt install -y nginx
+
+# Overwrite Nginx config file
+cp nginx.config /etc/nginx/sites-available/default.config
+sudo systemctl reload nginx
+
 # Overwrite hosts file
 cp hosts /etc/hosts
 
