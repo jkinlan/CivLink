@@ -37,7 +37,3 @@ Run shell script
 ```
 ./civlink.sh
 ```
-
-```
-bin/run rake db:setup
-```
