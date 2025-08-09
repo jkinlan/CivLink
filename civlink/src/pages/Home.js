@@ -6,9 +6,10 @@ export default function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="Welcome to CivLink" />
+        <img src={logo} className="App-banner" alt="Welcome to CivLink" />
         <p>
-          Helping improve our society.
+          Helping you,<br></br>
+          help improve our society.
         </p>
       </header>
       <footer>

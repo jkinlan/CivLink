@@ -6,6 +6,10 @@ body {
   background-color: #008AD8;
 }
 
+.App-banner {
+  height: 15vmin;
+}
+
 @media only screen and (max-width: 602px) {
 
 .App-logo {
