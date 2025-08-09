@@ -1,3 +1,6 @@
 [submodule "fixmystreet"]
 	path = fixmystreet
 	url = https://github.com/jkinlan/fixmystreet.git
+[submodule "e-petitions"]
+	path = e-petitions
+	url = https://github.com/jkinlan/e-petitions.git
