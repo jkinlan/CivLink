@@ -2,9 +2,67 @@
   text-align: center;
 }
 
+body {
+  background-color: #008AD8;
+}
+
+@media only screen and (max-width: 602px) {
+
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
+  margin:auto;
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.sign-in-btn {
+  padding: 16px 32px;
+  background-color: Green; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header {
+  display:contents;
+  align-items:center;
+  display:block;
+  text-align: center;
+  margin:auto;
+  padding-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 603px) {
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin-left:25%;
+  padding-top: .5rem;
+  display: block;
+}
+
+.sign-in-btn {
+  padding: 16px 32px;
+  background-color: Green; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right:25%;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+
+.sign-in-btn:hover {
+  background-color: rgb(0, 102, 0); 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +72,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #008AD8;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header a {
+  color: white;
+  text-decoration: none;
 }
 
 .App-link {
@@ -35,4 +98,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.menu {
+  background-color: #008AD8;
+  display: flex;
+  justify-content: center;
+  margin: .5rem;
+  gap: .5rem;
+}
+
+.menu a {
+  background-color: #0072c6;
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.menu a:hover {
+  background-color: #0062a8;
+  transform: scale(1.015);
+}
+
+div.footer-container {
+  color: white;
+  background-color: #008AD8;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+div.footer-links {  
+  justify-content: center;  
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;  
+  gap: 1.5rem;
+}
+
+div.footer-links a {  
+  color: white;
+  justify-content: center;  
+  text-align: center;
+  text-decoration: none;
+  justify-content: center; 
+  text-align: center;
+}
+
+footer a:hover {
+    font-weight: bold;
+    margin-left: -.15rem;
+    margin-right: -.15rem;
+}
+
+iframe{
+  position:absolute; 
+  left:0; 
+  right:0; 
+  width:100%; 
+  height:150vh; 
+  border:none; 
+  margin:0; 
+  padding:0; 
+  overflow:scroll; 
+  z-index:999999;
 }
