@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Overwrite hosts file
+cp hosts /etc/hosts
+
 # Setup e-petition database
 cd e-petitions
 bin/run rake db:setup
