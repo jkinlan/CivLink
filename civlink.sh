@@ -19,6 +19,16 @@ cd e-petitions
 bin/run rake db:setup
 cd ..
 
+# Start landing page
+cd civlink
+rm -rf node_modules
+rm package-lock.json
+npm cache clean --force
+npm install ajv@8.12.0 ajv-keywords@5.1.0
+npm install
+npm start headless
+cd ..
+
 # Start fixmystreet docker containers
 cd fixmystreet
 docker-compose up -d
