@@ -27,3 +27,17 @@ as an open petition on the site's "open petitions" page.
 ####
 CivLink uses a copy of [Pytition](https://github.com/pytition/Pytition), 
 a project for self-hosted privacy-friendly online petitions.
+
+---
+
+## Instructions
+
+Run shell script
+
+```
+./civlink.sh
+```
+
+```
+bin/run rake db:setup
+```
