@@ -21,6 +21,7 @@ cd ..
 
 # Start fixmystreet docker containers
 cd fixmystreet
+bin/make_css
 docker compose down
 docker-compose up -d
 cd ..
