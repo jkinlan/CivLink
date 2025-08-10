@@ -11,7 +11,6 @@ body {
 }
 
 @media only screen and (max-width: 602px) {
-
 .App-logo {
   height: 15vmin;
   pointer-events: none;
@@ -20,15 +19,14 @@ body {
   padding-bottom: 1.5rem;
   display: block;
 }
-
 .sign-in-btn {
   padding: 16px 32px;
   background-color: Green; 
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transform: scale(1.015);
 }
-
 .site-header {
   display:contents;
   align-items:center;
@@ -40,7 +38,6 @@ body {
 }
 
 @media only screen and (min-width: 603px) {
-
 .App-logo {
   height: 10vmin;
   pointer-events: none;
@@ -48,7 +45,6 @@ body {
   padding-top: .5rem;
   display: block;
 }
-
 .sign-in-btn {
   padding: 16px 32px;
   background-color: Green; 
@@ -57,7 +53,6 @@ body {
   font-weight: bold;
   margin-right:25%;
 }
-
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -65,7 +60,7 @@ body {
 }
 }
 
-.sign-in-btn:hover {
+.site-header a:hover {
   background-color: rgb(0, 102, 0); 
 }
 
@@ -74,7 +69,6 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #008AD8;
   min-height: 60vh;
@@ -85,12 +79,10 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-header a {
   color: white;
   text-decoration: none;
 }
-
 .App-link {
   color: #61dafb;
 }
