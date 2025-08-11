@@ -25,8 +25,8 @@ petition crosses a certain threshold, the petition becomes "public" and is liste
 as an open petition on the site's "open petitions" page.
 
 ####
-CivLink uses a copy of [Pytition](https://github.com/pytition/Pytition), 
-a project for self-hosted privacy-friendly online petitions.
+CivLink contains a submodule of [e-petitions](https://github.com/alphagov/e-petitions), 
+an MIT Licence project to run the UK Government e-petition service.
 
 ---
 
