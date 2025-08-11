@@ -21,12 +21,14 @@ cd ..
 
 # Start fixmystreet docker containers
 cd fixmystreet
+git pull origin master
 docker compose down
 docker-compose up -d
 cd ..
 
 # Start e-petition docker containers
 cd e-petitions
+git pull origin master
 docker compose down
 docker-compose up -d
 cd ..
