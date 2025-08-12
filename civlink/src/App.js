@@ -12,7 +12,7 @@ export default function App() {
       </header>
       <nav className="menu">
         <Link to="/FixMyStreet">Report Issues</Link>
-        <Link to="/Petitions">Petitions</Link>
+        <Link to="http://petitions.localhost:3000/">Petitions</Link>
       </nav>
 
       <Routes>
