@@ -11,7 +11,7 @@ body {
 }
 
 @media only screen and (max-width: 602px) {
-.App-logo {
+header.site-header {
   height: 15vmin;
   pointer-events: none;
   margin:auto;
