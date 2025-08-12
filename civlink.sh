@@ -5,7 +5,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install Nginx
-audo apt install -y nginx node npm
+sudo apt install -y nginx node npm
 
 # Overwrite Nginx config file
 cp nginx.config /etc/nginx/sites-available/default.config
