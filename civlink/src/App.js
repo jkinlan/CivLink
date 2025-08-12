@@ -9,7 +9,6 @@ export default function App() {
     <Router>
       <header class="site-header">
       <img src={logo} className="App-logo" alt="Welcome to CivLink" />
-      <a href="/signin" class="sign-in-btn">Sign In</a>
       </header>
       <nav className="menu">
         <Link to="/FixMyStreet">Report Issues</Link>
