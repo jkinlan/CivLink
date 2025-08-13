@@ -4,7 +4,7 @@
 sudo apt update
 sudo apt upgrade -y
 
-# Install Nginx
+# Install Components
 sudo apt install -y nginx node npm docker-ce docker-ce-cli containerd.io
 
 # Overwrite Nginx config file
@@ -17,6 +17,11 @@ cp hosts /etc/hosts
 # Setup e-petition database
 cd e-petitions
 bin/run rake db:setup
+bin/run rake epets:countries:load
+bin/run rails runner 'FetchRegionsJob.perform_now'
+bin/run rails runner 'FetchConstituenciesJob.perform_now'
+bin/run rails runner 'FetchDepartmentsJob.perform_now'
+bin/run rails runner 'Site.enable_signature_counts!(interval: 10)'
 cd ..
 
 # Start fixmystreet docker containers
